@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
+
 # Windows PowerShell có thể dùng cp1252; ép UTF-8 để in tiếng Việt và emoji an toàn.
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
